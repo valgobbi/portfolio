@@ -2,7 +2,7 @@ nav nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--card-bg);
+  background: var(--secondary);
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
@@ -10,7 +10,6 @@ nav nav {
 .logo {
   font-weight: bold;
   font-size: 2rem;
-  color: var(--accent);
 }
 
 nav ul {
@@ -24,4 +23,5 @@ nav ul {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--primary);
 }

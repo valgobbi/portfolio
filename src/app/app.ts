@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
-import { PortfolioComponent } from './portfolio/portfolio';
-import { NavComponent } from "./nav/nav";
-import { FooterComponent } from "./footer/footer";
+import { PortfolioComponent } from './pages/portfolio';
+import { NavComponent } from "./components/nav";
+import { FooterComponent } from "./components/footer";
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,9 @@
+<div class="strip-content">
+<div class="company-logos">
+    @for (item of items; track item.name) {
+        <div class="logo-item">
+            <img [src]="item.src" [alt]="item.name">
+        </div>
+    }
+</div>
+</div>

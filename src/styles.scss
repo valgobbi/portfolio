@@ -1,23 +1,15 @@
 // styles.scss
 
 :root {
-    --bg: #101522;
-    --text: #fff;
-    --card-bg: #181c2a;
-    --accent: #6c63ff;
-    --tag-bg: #23263a;
-    --tag-text: #b3b8c7;
-    --border: #23263a;
+    --bg: #FFFFFF;
+    --primary: #131923;
+    --secondary: #F3F4FC;
   }
   
-  [data-theme='light'] {
-    --bg: #f7f8fa;
-    --text: #181c2a;
-    --card-bg: #fff;
-    --accent: #6c63ff;
-    --tag-bg: #e6e8ef;
-    --tag-text: #6c63ff;
-    --border: #e6e8ef;
+  [data-theme='dark'] {
+    --bg: #1F242E ;
+    --primary: #F3F4FC;
+    --secondary: #181c2a;
   }
 
   html, body {
@@ -28,7 +20,12 @@
   
   body {
     background: var(--bg);
-    color: var(--text);
+    color: var(--primary);
     margin: 0;
     transition: background 0.3s, color 0.3s;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }

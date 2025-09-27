@@ -1,0 +1,130 @@
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin: 64px 0;
+  display: flex;
+  flex-direction: row;
+
+  .left {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid var(--secondary);
+
+    .content {
+      text-align: left;
+
+      h1 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        letter-spacing: 1.15px;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        letter-spacing: 0.12px;
+        margin: 0 0 32px;
+      }
+
+      .socials {
+        display: flex;
+        width: 200px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 56px;
+          height: 56px;
+          color: var(--primary);
+          background-color: var(--secondary);
+          border-radius: 8px;
+
+          i {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    .content {
+      max-width: 720px;
+      text-align: left;
+
+    .tags {
+      margin: 1rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: flex-start;
+    }
+
+    .tags span {
+      background: var(--secondary);
+      color: var(--primary);
+      border-radius: 0.5rem;
+      padding: 0.3rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .bio {
+      margin: 1.5rem 0;
+      color: var(--primary);
+    }
+    }
+  }
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.projects {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.project-card {
+  width: 300px;
+  height: 350px;
+  background: var(--secondary);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--secondary);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.about img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}

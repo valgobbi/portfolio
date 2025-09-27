@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.scss']
 })
 export class NavComponent {
-  theme: 'light' | 'dark' = 'dark';
+  theme: 'light' | 'dark' = 'light';
 
   toggleTheme() {
     this.theme = this.theme === 'dark' ? 'light' : 'dark';
