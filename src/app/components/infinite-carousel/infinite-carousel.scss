@@ -1,49 +1,57 @@
 :host {
-  width: 100%;
-  padding: 2rem 0;
-  background: #fff;
-  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100px;
 
-    .strip-content {
+  div.strip-content {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+    height: calc(100% - 40px);
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 20px 0;
 
-        .company-logos {
-        display: flex;
-        animation: slide 20s linear infinite;
-        gap: 2rem;
-
-            .logo-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 120px;
-
-                .logo-item img {
-                object-fit: contain;
-                }
-            }
-        }
+    &:hover div.company-logos {
+      animation-play-state: paused;
     }
-}
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--bg) 2%, var(--bg) 3%, transparent 15%, transparent 84%, var(--bg) 97%, var(--bg) 98%);
+    }
 
-@media (max-width: 768px) {
-  .logo-item {
-    min-width: 100px;
+    div.company-logos {
+      height: 100%;
+      display: inline-flex;
+      justify-content: space-around;
+      flex-direction: row;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-name: slide-across;
+      animation-iteration-count: infinite;
+
+      img.logo-img {
+        height: 100%;
+        width: auto;
+        margin: 0 10px;
+      }
+    }
   }
-  
-  .logo-item img {
-    width: 50px;
-    height: 50px;
+  @keyframes slide-across {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
