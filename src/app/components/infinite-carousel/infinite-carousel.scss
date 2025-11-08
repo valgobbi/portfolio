@@ -34,7 +34,7 @@
       display: inline-flex;
       justify-content: space-around;
       flex-direction: row;
-      animation-duration: 10s;
+      animation-duration: 25s;
       animation-timing-function: linear;
       animation-name: slide-across;
       animation-iteration-count: infinite;
@@ -42,7 +42,7 @@
       img.logo-img {
         height: 100%;
         width: auto;
-        margin: 0 10px;
+        margin: 0 50px;
       }
     }
   }

@@ -1,0 +1,73 @@
+.hero {
+  text-align: center;
+  margin: 64px 0;
+  display: flex;
+  flex-direction: row;
+
+  .left {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid var(--secondary);
+
+    .content {
+      text-align: left;
+
+      h1 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        letter-spacing: 1.15px;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        letter-spacing: 0.12px;
+        margin: 0 0 32px;
+      }
+    }
+  }
+
+  .scroll-down {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 100%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    .content {
+      max-width: 720px;
+      text-align: left;
+
+      .tags {
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: flex-start;
+      }
+
+      .tags span {
+        background: var(--secondary);
+        color: var(--primary);
+        border-radius: 0.5rem;
+        padding: 0.3rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .bio {
+        margin: 1.5rem 0;
+        color: var(--primary);
+      }
+    }
+  }
+}

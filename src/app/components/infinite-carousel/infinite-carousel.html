@@ -2,7 +2,7 @@
     @for (l of loops; track l) {
     <div [class]="`company-logos animate-${l}`">
         @for (item of items; track item.name) {
-            <img class="logo-img" [src]="item.src" [alt]="item.name">
+            <img class="logo-img" [src]="item.src" [alt]="item.name" [style]="`width: ${item.width};`">
         }
     </div>
     }

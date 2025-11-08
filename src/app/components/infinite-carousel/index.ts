@@ -28,10 +28,51 @@ export class InfiniteCarouselComponent {
         // Add any component logic here that depends on the new size
     }
 
-    items = ['bifor', 'furktech', 'notifyme', 're3ve', 'sebrae', 'wisemind'].map(c => (
+    items = [
         {
-            name: c,
-            src: `/images/${c}.PNG`
-        }
-    ))
+            name: 'bifor',
+            src: '/svg/bifor.svg',
+            width: '100px'
+        },
+        {
+            name: 'furktech',
+            src: '/svg/furktech.svg',
+            width: '130px'
+        },
+        {
+            name: 'notifyme',
+            src: '/svg/notifyme.svg',
+            width: '140px'
+        },
+        {
+            name: 're3ve',
+            src: '/svg/re3ve.svg',
+            width: '100px'
+        },
+        {
+            name: 'sebrae',
+            src: '/svg/sebrae.svg',
+            width: '100px'
+        },
+        {
+            name: 'wisemind',
+            src: '/svg/wisemind.svg',
+            width: '120px'
+        },
+        {
+            name: 'volvo',
+            src: '/svg/volvo.svg',
+            width: '170px'
+        },
+        {
+            name: 'wisemind',
+            src: '/svg/wisemind.svg',
+            width: '100px'
+        },
+        {
+            name: 'wise',
+            src: '/svg/wise.svg',
+            width: '100px'
+        },
+    ]
 }
