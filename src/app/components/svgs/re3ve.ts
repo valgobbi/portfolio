@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="91.65" height="27.883" viewBox="0 0 91.65 27.883">
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 're3ve-svg',
+  template: `
+  <svg xmlns="http://www.w3.org/2000/svg" width="91.65" height="27.883" viewBox="0 0 91.65 27.883">
   <g id="Grupo_59831" data-name="Grupo 59831" transform="translate(0 0)" opacity="0.4">
     <path id="Caminho_21218" data-name="Caminho 21218" d="M404.007,236.1l-2.082-1.2L385.7,225.538c.1,1.566.253,3.915.4,5.643.1,1.2-.008,4.129,2.822,5.761l7.357,4.243c3.773,2.176,6.109,5.533,4.135,8.948l5.241-9.068c1.342-2.3.063-3.985-1.646-4.97" transform="translate(-385.702 -224.097)"/>
     <path id="Caminho_21219" data-name="Caminho 21219" d="M523.324,226.363a.453.453,0,0,1-.576.154l-.39-.225,6.333-10.954c-4.976-2.71-8.156,1.486-9.134,3.176l-2.343,4.058s-.241-.13-.335-.19a.468.468,0,0,1-.147-.716l2.287-3.958c1.416-2.45,4.864-6.24,10.588-3.058.1.057.365.211.365.211" transform="translate(-501.037 -213.434)"/>
@@ -11,3 +16,18 @@
     <path id="Caminho_21226" data-name="Caminho 21226" d="M652.474,299.306H651.5a3.744,3.744,0,0,0-3.49,1.7v-1.1a.6.6,0,0,0-.6-.6h-1.72v12.962h1.795a.6.6,0,0,0,.424-.162.538.538,0,0,0,.174-.411v-7.329a2.905,2.905,0,0,1,.773-2.131,2.837,2.837,0,0,1,2.119-.785h1.5a.584.584,0,0,0,.411-.149.517.517,0,0,0,.162-.4v-1.6Z" transform="translate(-614.732 -289.08)"/>
   </g>
 </svg>
+
+  `,
+  styles: `
+    :host {
+      margin: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    svg {
+        fill: var(--primary);
+    }
+  `
+})
+export class Re3veSVG {}

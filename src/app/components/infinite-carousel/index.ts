@@ -1,7 +1,18 @@
 import { Component, HostListener } from '@angular/core';
+import { WiseSVG } from '../svgs/wise';
+import { AiukaSVG } from "../svgs/aiuka";
+import { WisemindSVG } from "../svgs/wisemind";
+import { VolvoSVG } from "../svgs/volvo";
+import { SebraeSVG } from "../svgs/sebrae";
+import { Re3veSVG } from "../svgs/re3ve";
+import { NotifymeSVG } from "../svgs/notifyme";
+import { FurktechSVG } from "../svgs/furktech";
+import { DentaluniWiseSVG } from "../svgs/dentaluni";
+import { BiforSVG } from "../svgs/bifor";
 
 @Component({
   selector: 'app-infinite-carousel',
+  imports: [WiseSVG, AiukaSVG, WisemindSVG, VolvoSVG, SebraeSVG, Re3veSVG, NotifymeSVG, FurktechSVG, DentaluniWiseSVG, BiforSVG],
   templateUrl: './infinite-carousel.html',
   styleUrls: ['./infinite-carousel.scss']
 })
@@ -13,66 +24,4 @@ export class InfiniteCarouselComponent {
     constructor() {
         this.loops = [1, 2, 3];
     }
-
-    ngOnInit() {
-        this.screenWidth = window.innerWidth;
-        this.screenHeight = window.innerHeight;
-        console.log('ngOnInit: ', this.screenWidth, this.screenHeight)
-    }
-
-    @HostListener('window:resize')
-    onWindowResize() {
-        this.screenWidth = window.innerWidth;
-        this.screenHeight = window.innerHeight;
-        console.log('resize: ', this.screenWidth, this.screenHeight)
-        // Add any component logic here that depends on the new size
-    }
-
-    items = [
-        {
-            name: 'bifor',
-            src: '/svg/bifor.svg',
-            width: '100px'
-        },
-        {
-            name: 'furktech',
-            src: '/svg/furktech.svg',
-            width: '130px'
-        },
-        {
-            name: 'notifyme',
-            src: '/svg/notifyme.svg',
-            width: '140px'
-        },
-        {
-            name: 're3ve',
-            src: '/svg/re3ve.svg',
-            width: '100px'
-        },
-        {
-            name: 'sebrae',
-            src: '/svg/sebrae.svg',
-            width: '100px'
-        },
-        {
-            name: 'wisemind',
-            src: '/svg/wisemind.svg',
-            width: '120px'
-        },
-        {
-            name: 'volvo',
-            src: '/svg/volvo.svg',
-            width: '170px'
-        },
-        {
-            name: 'wisemind',
-            src: '/svg/wisemind.svg',
-            width: '100px'
-        },
-        {
-            name: 'wise',
-            src: '/svg/wise.svg',
-            width: '100px'
-        },
-    ]
 }

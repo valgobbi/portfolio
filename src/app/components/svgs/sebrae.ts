@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="74.201" height="34.867" viewBox="0 0 74.201 34.867">
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'sebrae-svg',
+  template: `
+  <svg xmlns="http://www.w3.org/2000/svg" width="74.201" height="34.867" viewBox="0 0 74.201 34.867">
   <g id="Grupo_2207" data-name="Grupo 2207" opacity="0.4">
     <path id="Caminho_20" data-name="Caminho 20" d="M66.525,3.847,67.366,0H44.324L43.5,3.847Z" transform="translate(-15.959)"/>
     <path id="Caminho_21" data-name="Caminho 21" d="M64.558,12.928l.84-3.866h-23l-.86,3.866Z" transform="translate(-15.238 -3.319)"/>
@@ -12,3 +17,17 @@
     <path id="Caminho_29" data-name="Caminho 29" d="M35.654,39.916l-.821,3.828h23l.86-3.828Z" transform="translate(-12.779 -14.619)"/>
   </g>
 </svg>
+  `,
+  styles: `
+    :host {
+      margin: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    svg {
+        fill: var(--primary);
+    }
+  `
+})
+export class SebraeSVG {}

@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="134.79" height="24.029" viewBox="0 0 134.79 24.029">
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'wisemind-svg',
+  template: `
+  <svg xmlns="http://www.w3.org/2000/svg" width="134.79" height="24.029" viewBox="0 0 134.79 24.029">
   <g id="Grupo_1" data-name="Grupo 1" transform="translate(0.5 0.586)" opacity="0.4">
     <g id="Grupo_29450" data-name="Grupo 29450" transform="translate(0 0)">
       <path id="Caminho_39695" data-name="Caminho 39695" d="M113.272,12.5h1.7l2.335,11.381c.195.924.365,2.261.511,3.4.17-1.143.413-2.48.632-3.4l1.8-7.563c.389-1.58,1.119-2.6,2.578-2.6s2.189,1.022,2.578,2.6l1.775,7.563c.219.924.462,2.286.632,3.429.146-1.143.34-2.48.535-3.429L130.684,12.5h1.7L128.86,29.475h-1.994L123.85,16.611c-.219-.948-.413-1.313-1.021-1.313s-.827.365-1.045,1.313l-2.991,12.864H116.8Z" transform="translate(-81.97 -9.046)"/>
@@ -14,3 +19,17 @@
     </g>
   </g>
 </svg>
+  `,
+  styles: `
+    :host {
+      margin: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    svg {
+        fill: var(--primary);
+    }
+  `
+})
+export class WisemindSVG {}

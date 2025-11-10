@@ -1,9 +1,17 @@
 <div class="strip-content">
     @for (l of loops; track l) {
-    <div [class]="`company-logos animate-${l}`">
-        @for (item of items; track item.name) {
-            <img class="logo-img" [src]="item.src" [alt]="item.name" [style]="`width: ${item.width};`">
-        }
-    </div>
+        <div [class]="`company-logos animate-${l}`">
+            <wise-svg />
+            <aiuka-svg />
+            <bifor-svg />
+            <dentaluni-svg />
+            <furktech-svg />
+            <notifyme-svg />
+            <re3ve-svg />
+            <sebrae-svg />
+            <volvo-svg />
+            <wisemind-svg />
+        </div>
     }
+    <wise-svg />
 </div>

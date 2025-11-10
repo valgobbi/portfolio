@@ -34,7 +34,7 @@
       display: inline-flex;
       justify-content: space-around;
       flex-direction: row;
-      animation-duration: 25s;
+      animation-duration: 90s;
       animation-timing-function: linear;
       animation-name: slide-across;
       animation-iteration-count: infinite;
@@ -43,6 +43,7 @@
         height: 100%;
         width: auto;
         margin: 0 50px;
+        fill: var(--primary);
       }
     }
   }
