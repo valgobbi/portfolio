@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-about',
     template: `
-        <section class="about">
+        <section class="about" id="sobre-mim">
             <div class="container">
                 <div class="contentGrid">
                     <img src="images/profile_pic.png" alt="Valéria Gobbi" />
@@ -18,6 +18,7 @@ import { Component } from '@angular/core';
     `,
     styles: `
         section.about {
+            margin: 64px auto;
             div.container {
                 div.contentGrid {
                     display: flex;

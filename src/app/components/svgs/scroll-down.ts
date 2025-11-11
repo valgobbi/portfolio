@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'wise-svg',
+  selector: 'scroll-down-svg',
   template: `
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91.952" height="94.952" viewBox="0 0 91.952 94.952">
   <defs>
@@ -19,7 +19,6 @@ import { Component } from '@angular/core';
   `,
   styles: `
     :host {
-      margin: 0 50px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -29,4 +28,4 @@ import { Component } from '@angular/core';
     }
   `
 })
-export class WiseSVG {}
+export class ScrollDownSVG {}

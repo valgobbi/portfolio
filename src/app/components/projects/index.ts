@@ -21,6 +21,11 @@ export class ProjectsComponent {
       link: '/wisemind'
     },
     {
+      name: 'wise_ia',
+      imgSrc: '/images/portfolio_wise_ia.png',
+      link: '/wise_ia'
+    },
+    {
       name: 'bifor',
       imgSrc: '/images/portfolio_bifor.png',
       link: '/bifor'
@@ -34,11 +39,6 @@ export class ProjectsComponent {
       name: 'sebrae_on',
       imgSrc: '/images/portfolio_sebrae_on.png',
       link: '/sebrae_on'
-    },
-    {
-      name: 'wise_ia',
-      imgSrc: '/images/portfolio_wise_ia.png',
-      link: '/wise_ia'
     },
     {
       name: 'notifyme',

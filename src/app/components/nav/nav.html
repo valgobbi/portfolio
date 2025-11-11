@@ -1,13 +1,11 @@
 <nav>
-  <nav>
-    <img src="images/valeria-gobbi_logo.png" alt="Valéria Gobbi" />
-    <ul>
-      <li>Projetos</li>
-      <li>Currículo</li>
-      <li>Sobre mim</li>
-    </ul>
-    <button (click)="toggleTheme()" class="theme-toggle">
-      <i class="fab fa-solid fa-circle-half-stroke"></i>
-    </button>
-  </nav>
+  <logo-svg (click)="backToTop()" />
+  <ul>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#curriculo">Currículo</a></li>
+    <li><a href="#sobre-mim">Sobre mim</a></li>
+  </ul>
+  <button (click)="toggleTheme()" class="theme-toggle">
+    <i class="fab fa-solid fa-circle-half-stroke"></i>
+  </button>
 </nav>

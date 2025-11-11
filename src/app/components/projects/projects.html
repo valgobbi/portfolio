@@ -1,10 +1,12 @@
-<section class="projects">
+<section class="projects" id="projetos">
   <div class="container">
     <div class="keen-slider" #sliderRef>
       @for (p of projects; track p) {
-        <mat-card class="keen-slider__slide project-card outline">
-          <img mat-card-image [src]="p.imgSrc" [alt]="p.name">
-        </mat-card>
+        <a [href]="p.link">
+          <mat-card class="keen-slider__slide project-card outline">
+            <img mat-card-image [src]="p.imgSrc" [alt]="p.name">
+          </mat-card>
+        </a>
       }
     </div>
   </div>

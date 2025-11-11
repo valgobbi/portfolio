@@ -1,14 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { PortfolioComponent } from './pages/portfolio';
-import { NavComponent } from "./components/nav";
-import { FooterComponent } from "./components/footer";
 
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from "./components/footer";
+import { NavComponent } from './components/nav';
 @Component({
   selector: 'app-root',
-  imports: [PortfolioComponent, NavComponent, FooterComponent],
+  imports: [RouterOutlet, NavComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
-  protected readonly title = signal('val-portfolio');
-}
+export class App {}

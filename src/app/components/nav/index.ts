@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { LogoSVG } from "../svgs/logo";
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.html',
-  styleUrls: ['./nav.scss']
+  styleUrls: ['./nav.scss'],
+  imports: [LogoSVG]
 })
 export class NavComponent {
   theme: 'light' | 'dark' = 'light';
@@ -15,5 +17,14 @@ export class NavComponent {
 
   ngOnInit() {
     document.documentElement.setAttribute('data-theme', this.theme);
+  }
+
+  backToTop () {
+    console.log(location)
+    if (location?.pathname === '/') {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    } else {
+      location.href = '/'
+    }
   }
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SocialsComponent } from '../socials';
+import { ScrollDownSVG } from "../svgs/scroll-down";
 
 @Component({
   selector: 'app-header',
-  imports: [ SocialsComponent ],
+  imports: [SocialsComponent, ScrollDownSVG],
   templateUrl: './header.html',
   styleUrls: ['./header.scss']
 })
