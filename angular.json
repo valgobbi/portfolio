@@ -18,6 +18,9 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "outputPath": "docs",
+            "server": false,
+            "prerender": false,
             "polyfills": [
               "zone.js"
             ],
