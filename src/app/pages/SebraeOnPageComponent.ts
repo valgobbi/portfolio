@@ -7,8 +7,8 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   template: `
     <img src="/images/pages/sebrae_on_2x.png" alt="Sebrae On">
     <app-project-navigator
-      [prevUrl]="'/precifique'"
-      [nextUrl]="'/wise'"
+      [prevUrl]="'/portfolio/precifique'"
+      [nextUrl]="'/portfolio/wise'"
     />
   `,
   styles: `:host {

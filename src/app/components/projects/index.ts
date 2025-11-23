@@ -18,57 +18,57 @@ export class ProjectsComponent {
     {
       name: 'wisemind',
       imgSrc: '/images/projetos/wisemind.png',
-      link: '/wisemind'
+      link: '/portfolio/wisemind'
     },
     {
       name: 'bifor',
       imgSrc: '/images/projetos/bifor.png',
-      link: '/bifor'
+      link: '/portfolio/bifor'
     },
     {
       name: 'sebrae_canvas',
       imgSrc: '/images/projetos/sebrae_canvas.png',
-      link: '/sebrae_canvas'
+      link: '/portfolio/sebrae_canvas'
     },
     {
       name: 'innergy',
       imgSrc: '/images/projetos/innergy_rh.png',
-      link: '/innergy_rh'
+      link: '/portfolio/innergy_rh'
     },
     {
       name: 'precifique',
       imgSrc: '/images/projetos/precifique.png',
-      link: '/precifique'
+      link: '/portfolio/precifique'
     },
     {
       name: 'sebrae_on',
       imgSrc: '/images/projetos/sebrae_on.png',
-      link: '/sebrae_on'
+      link: '/portfolio/sebrae_on'
     },
     {
       name: 'wise',
       imgSrc: '/images/projetos/wise.png',
-      link: '/wise'
+      link: '/portfolio/wise'
     },
     {
       name: 'notifyme',
       imgSrc: '/images/projetos/notifyme.png',
-      link: '/notifyme'
+      link: '/portfolio/notifyme'
     },
     {
       name: 'b4cred',
       imgSrc: '/images/projetos/b4cred.png',
-      link: '/b4cred'
+      link: '/portfolio/b4cred'
     },
     {
       name: 'furktech',
       imgSrc: '/images/projetos/furktech.png',
-      link: '/furktech'
+      link: '/portfolio/furktech'
     },
     {
       name: 'slides',
       imgSrc: '/images/projetos/slides.png',
-      link: '/slides'
+      link: '/portfolio/slides'
     }
   ]
 

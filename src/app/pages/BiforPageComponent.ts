@@ -7,8 +7,8 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   template: `
     <img src="/images/pages/bifor_2x.png" alt="Bifor">
     <app-project-navigator
-      [prevUrl]="'/wisemind'"
-      [nextUrl]="'/sebrae_canvas'"
+      [prevUrl]="'/portfolio/wisemind'"
+      [nextUrl]="'/portfolio/sebrae_canvas'"
     />
   `,
   styles: `:host {

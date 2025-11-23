@@ -22,7 +22,6 @@
             "outputMode": "static",
             "baseHref": "/portfolio/",
             "server": false,
-            "prerender": false,
             "polyfills": [
               "zone.js"
             ],

@@ -7,8 +7,8 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   template: `
     <img src="/images/pages/b4cred_2x.png" alt="Wise">
     <app-project-navigator
-      [prevUrl]="'/notifyme'"
-      [nextUrl]="'/furktech'"
+      [prevUrl]="'/portfolio/notifyme'"
+      [nextUrl]="'/portfolio/furktech'"
     />
   `,
   styles: `:host {

@@ -7,8 +7,8 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   template: `
     <img src="/images/pages/furktech_2x.png" alt="Bifor">
     <app-project-navigator
-      [prevUrl]="'/b4cred'"
-      [nextUrl]="'/slides'"
+      [prevUrl]="'/portfolio/b4cred'"
+      [nextUrl]="'/portfolio/slides'"
     />
   `,
   styles: `:host {
