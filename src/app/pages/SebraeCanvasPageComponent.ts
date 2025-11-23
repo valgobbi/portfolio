@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-sebrae_canvas',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="assets/images/pages/sebrae_canvas_2x.png" alt="Sebrae Canvas">
+    <img src="/images/pages/sebrae_canvas_2x.png" alt="Sebrae Canvas">
     <app-project-navigator
       [prevUrl]="'/portfolio/bifor'"
       [nextUrl]="'/portfolio/innergy_rh'"

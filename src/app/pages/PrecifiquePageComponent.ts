@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-precifique',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="assets/images/pages/precifique_2x.png" alt="Precifique">
+    <img src="/images/pages/precifique_2x.png" alt="Precifique">
     <app-project-navigator
       [prevUrl]="'/portfolio/innergy_rh'"
       [nextUrl]="'/portfolio/sebrae_on'"
