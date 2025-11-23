@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-wisemind',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="/portfolio//pages/wisemind_2x.png" alt="Wisemind">
+    <img src="/portfolio/pages/wisemind_2x.png" alt="Wisemind">
     <app-project-navigator
       [prevUrl]="'/portfolio/slides'"
       [nextUrl]="'/portfolio/bifor'"

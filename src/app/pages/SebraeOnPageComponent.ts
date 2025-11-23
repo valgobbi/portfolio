@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-sebrae_on',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="/portfolio//pages/sebrae_on_2x.png" alt="Sebrae On">
+    <img src="/portfolio/pages/sebrae_on_2x.png" alt="Sebrae On">
     <app-project-navigator
       [prevUrl]="'/portfolio/precifique'"
       [nextUrl]="'/portfolio/wise'"

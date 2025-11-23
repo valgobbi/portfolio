@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-bifor',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="/portfolio//pages/bifor_2x.png" alt="Bifor">
+    <img src="/portfolio/pages/bifor_2x.png" alt="Bifor">
     <app-project-navigator
       [prevUrl]="'/portfolio/wisemind'"
       [nextUrl]="'/portfolio/sebrae_canvas'"
