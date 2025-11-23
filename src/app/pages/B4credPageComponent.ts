@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-b4cred',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="/portfolio/pages/b4cred_2x.png" alt="Wise">
+    <img src="assets/images/pages/b4cred_2x.png" alt="Wise">
     <app-project-navigator
       [prevUrl]="'/portfolio/notifyme'"
       [nextUrl]="'/portfolio/furktech'"

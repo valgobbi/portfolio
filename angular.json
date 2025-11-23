@@ -21,6 +21,7 @@
             "outputPath": "docs",
             "outputMode": "static",
             "baseHref": "/portfolio/",
+            "deployUrl": "/portfolio/",
             "server": false,
             "polyfills": [
               "zone.js"

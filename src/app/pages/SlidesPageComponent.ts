@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-slides',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="/portfolio/pages/slides_2x.png" alt="Slides">
+    <img src="assets/images/pages/slides_2x.png" alt="Slides">
     <app-project-navigator
       [prevUrl]="'/portfolio/furktech'"
       [nextUrl]="'/portfolio/wisemind'"
