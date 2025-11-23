@@ -5,7 +5,7 @@ import { ProjectNavigatorComponent } from '../components/projectNavigator';
   selector: 'page-notifyme',
   imports: [ProjectNavigatorComponent],
   template: `
-    <img src="/images/pages/notifyme_2x.png" alt="Notifyme">
+    <img src="images/pages/notifyme_2x.png" alt="Notifyme">
     <app-project-navigator
       [prevUrl]="'/portfolio/wise'"
       [nextUrl]="'/portfolio/b4cred'"
