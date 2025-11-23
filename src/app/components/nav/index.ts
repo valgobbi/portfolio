@@ -32,10 +32,11 @@ export class NavComponent {
   }
 
   backToTop () {
-    if (location?.pathname === '/') {
+    console.log(location?.pathname)
+    if (location?.pathname === '/portfolio/') {
       window.scrollTo({top: 0, behavior: 'smooth'});
     } else {
-      location.href = '/'
+      location.href = '/portfolio'
     }
   }
 }
