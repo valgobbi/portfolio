@@ -20,6 +20,7 @@
             "browser": "src/main.ts",
             "outputPath": "docs",
             "outputMode": "static",
+            "baseHref": "/portfolio/",
             "server": false,
             "prerender": false,
             "polyfills": [
