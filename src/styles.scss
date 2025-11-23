@@ -40,12 +40,18 @@ body {
     --bg: #FFFFFF;
     --primary: #131923;
     --secondary: #F3F4FC;
+    --bg-rgb: 255, 255, 255;
+    --primary-rgb: 19, 25, 35;
+    --secondary-rgb: 243, 244, 252;
   }
   
   [data-theme='dark'] {
     --bg: #1F242E ;
     --primary: #F3F4FC;
     --secondary: #181c2a;
+    --bg-rgb: 31, 36, 46;
+    --primary-rgb: 243, 244, 252;
+    --secondary-rgb: 24, 28, 42;
   }
 
   html, body {
@@ -53,6 +59,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 16px;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -69,7 +76,12 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .container {
-  max-width: 1600px;
-  width: calc(100vw - 64px);
+  width: 1600px;
+  max-width: calc(100vw - 32px);
   margin: 0 auto;
 }
+
+// * {
+//   border: 1px solid greenyellow;
+//   background-color: #adff2f29;
+// }

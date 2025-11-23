@@ -23,7 +23,6 @@ import { Component } from '@angular/core';
   `,
   styles: `
     :host {
-      margin: 0 50px;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   text-align: center;
   margin: 64px 0;
   display: flex;
@@ -12,6 +13,8 @@
 
     .content {
       text-align: left;
+      min-width: 250px;
+      padding-bottom: 24px;
 
       h1 {
         font-size: 4.5rem;
@@ -32,10 +35,15 @@
   .scroll-down {
     position: relative;
 
-    .scroll-box {
+    .animate-box {
+      transform: translateX(-50%);
       position: absolute;
       top: 100%;
-      transform: translateX(-50%);
+    }
+
+    .scroll-box {
+	    -webkit-animation: 4s bounce-top infinite ;
+      animation: 4s bounce-top infinite ;
 
       ::after {
         content: '';
@@ -53,9 +61,10 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    margin: 0 24px;
 
     .content {
-      max-width: 720px;
+      max-width: 620px;
       text-align: left;
 
       .tags {
@@ -79,5 +88,67 @@
         color: var(--primary);
       }
     }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    .scroll-down {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+    }
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-18px);
+            transform: translateY(-18px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  4% {
+    opacity: 1;
+  }
+  8% {
+    -webkit-transform: translateY(-13px);
+            transform: translateY(-13px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  12% {
+    -webkit-transform: translateY(-9px);
+            transform: translateY(-9px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  16% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  18% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  4%,
+  10%,
+  14%,
+  16% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  20% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
   }
 }

@@ -1,11 +1,20 @@
-<nav>
-  <logo-svg (click)="backToTop()" />
-  <ul>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#curriculo">Currículo</a></li>
-    <li><a href="#sobre-mim">Sobre mim</a></li>
-  </ul>
-  <button (click)="toggleTheme()" class="theme-toggle">
-    <i class="fab fa-solid fa-circle-half-stroke"></i>
-  </button>
+<nav [class]="`menu-links ${menuOpen ? 'open' : ''}`">
+  <div class="nav-container">
+    <logo-svg (click)="backToTop()" />
+    <div [class]="`menu-links ${menuOpen ? 'open' : ''}`">
+      <ul>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+      </ul>
+    </div>
+    <div class="menu-buttons">
+      <button (click)="toggleTheme()" class="theme-toggle">
+        <i class="fab fa-solid fa-circle-half-stroke"></i>
+      </button>
+      <button class="theme-toggle responsive">
+        <i [class]="`fab fa-solid ${menuOpen ? 'fa-close' : 'fa-bars'}`"></i>
+      </button>
+    </div>
+  </div>
 </nav>

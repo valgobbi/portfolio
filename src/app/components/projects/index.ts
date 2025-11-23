@@ -17,48 +17,58 @@ export class ProjectsComponent {
   projects = [
     {
       name: 'wisemind',
-      imgSrc: '/images/portfolio_wisemind.png',
+      imgSrc: '/images/projetos/wisemind.png',
       link: '/wisemind'
     },
     {
-      name: 'wise_ia',
-      imgSrc: '/images/portfolio_wise_ia.png',
-      link: '/wise_ia'
-    },
-    {
       name: 'bifor',
-      imgSrc: '/images/portfolio_bifor.png',
+      imgSrc: '/images/projetos/bifor.png',
       link: '/bifor'
     },
     {
       name: 'sebrae_canvas',
-      imgSrc: '/images/portfolio_sebrae_canvas.png',
+      imgSrc: '/images/projetos/sebrae_canvas.png',
       link: '/sebrae_canvas'
     },
     {
+      name: 'innergy',
+      imgSrc: '/images/projetos/innergy_rh.png',
+      link: '/innergy_rh'
+    },
+    {
+      name: 'precifique',
+      imgSrc: '/images/projetos/precifique.png',
+      link: '/precifique'
+    },
+    {
       name: 'sebrae_on',
-      imgSrc: '/images/portfolio_sebrae_on.png',
+      imgSrc: '/images/projetos/sebrae_on.png',
       link: '/sebrae_on'
     },
     {
+      name: 'wise',
+      imgSrc: '/images/projetos/wise.png',
+      link: '/wise'
+    },
+    {
       name: 'notifyme',
-      imgSrc: '/images/portfolio_notifyme.png',
+      imgSrc: '/images/projetos/notifyme.png',
       link: '/notifyme'
     },
     {
-      name: 'p4p',
-      imgSrc: '/images/portfolio_p4p.png',
-      link: '/p4p'
+      name: 'b4cred',
+      imgSrc: '/images/projetos/b4cred.png',
+      link: '/b4cred'
     },
     {
       name: 'furktech',
-      imgSrc: '/images/portfolio_furktech.png',
+      imgSrc: '/images/projetos/furktech.png',
       link: '/furktech'
     },
     {
-      name: 'more',
-      imgSrc: '/images/portfolio_more.png',
-      link: '/more'
+      name: 'slides',
+      imgSrc: '/images/projetos/slides.png',
+      link: '/slides'
     }
   ]
 
@@ -66,10 +76,54 @@ export class ProjectsComponent {
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       loop: true,
       slides: {
-        perView: 3,
+        perView: 1,
         spacing: 15,
       },
-    })
+      breakpoints: {
+        '(min-width: 540px)': {
+          slides: {
+            perView: 2,
+            spacing: 15,
+          },
+        },
+        '(min-width: 1080px)': {
+          slides: {
+            perView: 3,
+            spacing: 15,
+          },
+        },
+      },
+    },
+      [
+        (slider) => {
+          let timeout: number
+          let mouseOver = false
+          function clearNextTimeout() {
+            clearTimeout(timeout)
+          }
+          function nextTimeout() {
+            clearTimeout(timeout)
+            if (mouseOver) return
+            timeout = setTimeout(() => {
+              slider.next()
+            }, 2000)
+          }
+          slider.on("created", () => {
+            slider.container.addEventListener("mouseover", () => {
+              mouseOver = true
+              clearNextTimeout()
+            })
+            slider.container.addEventListener("mouseout", () => {
+              mouseOver = false
+              nextTimeout()
+            })
+            nextTimeout()
+          })
+          slider.on("dragStarted", clearNextTimeout)
+          slider.on("animationEnded", nextTimeout)
+          slider.on("updated", nextTimeout)
+        },
+      ])
   }
 
   ngOnDestroy() {

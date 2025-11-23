@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-socials',
   template: `
     <div class="socials">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="#"><i class="fab fa-regular fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/valeria-gobbi/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
     </div>
   `,
   styles: `
