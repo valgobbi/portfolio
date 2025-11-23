@@ -21,6 +21,10 @@
       background: var(--secondary);
       padding: 1rem 2rem;
 
+      .nav-logo {
+        cursor: pointer;
+      }
+
       .responsive {
         display: none;
       }
