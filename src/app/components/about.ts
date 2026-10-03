@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
                     <div class="imgHolder" style="background-image: url('images/profile_pic.png')"></div>
                     <div class="content">
                         <h3>Sobre mim</h3>
-                        <p>Mais de 15 anos de experiência em processos de design de ponta a ponta, sendo <b>slides de 5 anos com design Ui | Ux.</b></p>
+                        <p>Mais de 15 anos de experiência em processos de design de ponta a ponta, sendo <b>mais de 5 anos com design Ui | Ux.</b></p>
                         <p class="noMargin">Participo desde a <b>conceituação</b> do projeto, desenvolvimento de <b>protótipos</b> de baixa e alta fidelidade, <b>apresentação</b> do fluxo e telas para stakeholders, clientes e para a equipe de programadores e aprimoramento de produtos já existentes.</p>
                     </div>
                 </div>
